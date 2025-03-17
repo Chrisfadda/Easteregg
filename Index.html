@@ -1,15 +1,43 @@
+<!--  
+
+                                                                   ____________
+ _                                  _____     _____               /    ----    \
+| |              /\_               /     \   /     \             /______________\
+| |             (  @\___         /         V         \          |     EnoRm      |
+| |_____________/       \        \                   /          |       //       |
+                    ___           \                 /           |      //        |  
+|                 __/               \             /             |      ===       |
+|  ____________  |                    \         /               |       //       |
+| |            | |                      \     /                 |      //        |
+| |_           | |_                       \ /                   |                |
+                                                                |----------------|
+                                                                 \______________/
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DogBark</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>FightClub</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <audio id="BarkNoise" src="Media/BarkSound.mp3"></audio>
-    <button id="BarkButton">Press me</button>
-    <script src="js/main.js" defer></script>
+
+    <audio id="BarkNoise" src="BarkSound.mp3"></audio>
+
+    <button id="openPopup" class="openPopup">DogBut</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-contents">
+            <p>Wanna play with the dog?</p>
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script> 
+
 </body>
 </html>
