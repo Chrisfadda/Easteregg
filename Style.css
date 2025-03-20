@@ -28,4 +28,9 @@ body.custom-cursor {
     text-align: center;
     padding: 1%
 }
-
+  .Dog-Gif {
+     position: absolute;
+     width: 100px; /* Adjust to fit the size of your GIF */
+     height: auto;
+     transition: transform 5s ease-in-out;
+}
