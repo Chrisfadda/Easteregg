@@ -32,6 +32,8 @@ body.custom-cursor {
     padding: 1%
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 #yes {
     height: 35px;
@@ -52,6 +54,28 @@ body.custom-cursor {
     transition: opacity 1s ease-in-out; /* Animation transition for opacity */
 }
 
+=======
+<<<<<<< HEAD
+  .DogGif {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Animation transition for opacity */
+}
+
+>>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+  .DogGif {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Animation transition for opacity */
+}
+
+>>>>>>> Stashed changes
 .hidden {
     display: none;
 }
@@ -70,6 +94,12 @@ body.custom-cursor {
     border-radius: 1%;
 }
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 #no {
     height: 35px;
@@ -95,6 +125,14 @@ body.custom-cursor {
     height: auto;
     transition: transform 5s ease-in-out;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> 959bced19165a415834a3eb17dc47091a9a8040a
+>>>>>>> Stashed changes
+=======
+>>>>>>> 959bced19165a415834a3eb17dc47091a9a8040a
+>>>>>>> Stashed changes
 =======
 >>>>>>> 959bced19165a415834a3eb17dc47091a9a8040a
 >>>>>>> Stashed changes
