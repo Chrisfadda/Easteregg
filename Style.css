@@ -115,4 +115,5 @@ body.custom-cursor {
     /* Adjust to fit the size of your GIF */
     height: auto;
     transition: transform 5s ease-in-out;
+
 }
