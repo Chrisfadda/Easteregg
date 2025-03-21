@@ -44,33 +44,10 @@ body.custom-cursor {
 
 .DogGif {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
 }
-
-
-.DogGif {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
-}
-
-
-.DogGif {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
-}
-
 
 .hidden {
     display: none;
@@ -107,12 +84,4 @@ body.custom-cursor {
 
 #no:hover {
     cursor: pointer;
-}
-
-.Dog-Gif {
-    position: absolute;
-    width: 100px;
-    /* Adjust to fit the size of your GIF */
-    height: auto;
-    transition: transform 5s ease-in-out;
 }
