@@ -1,7 +1,7 @@
 body {
     background-image: url(screencapture-fightclub-nl-2025-03-21-10_11_57.png);
     background-size: auto;
-    height: 100vh;
+    height: 98vh;
     width: 99vw;
     align-items: center;
     display: flex;
@@ -27,6 +27,7 @@ body.custom-cursor {
     background-color: rgb(215, 205, 205);
     width: 250px;
     height: 100px;
+    margin-left: 43%;
     text-align: center;
     font-size: x-large;
     padding: 1%
