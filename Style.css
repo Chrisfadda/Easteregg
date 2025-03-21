@@ -31,6 +31,7 @@ body.custom-cursor {
     font-size: x-large;
     padding: 1%
 }
+<<<<<<< Updated upstream
 
 #yes {
     height: 35px;
@@ -41,6 +42,35 @@ body.custom-cursor {
     border-radius: 1%;
 }
 
+=======
+<<<<<<< HEAD
+  .DogGif {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Animation transition for opacity */
+}
+
+.hidden {
+    display: none;
+}
+
+.animate {
+    opacity: 1;
+    display: block; /* Ensure the element is displayed when the animation starts */
+=======
+
+#yes {
+    height: 35px;
+    width: 60px;
+    margin-right: 20px;
+    background-color: rgb(0, 224, 0);
+    border: none;
+    border-radius: 1%;
+}
+
+>>>>>>> Stashed changes
 #no {
     height: 35px;
     width: 60px;
@@ -64,4 +94,8 @@ body.custom-cursor {
     /* Adjust to fit the size of your GIF */
     height: auto;
     transition: transform 5s ease-in-out;
+<<<<<<< Updated upstream
+=======
+>>>>>>> 959bced19165a415834a3eb17dc47091a9a8040a
+>>>>>>> Stashed changes
 }
