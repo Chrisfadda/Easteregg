@@ -19,19 +19,19 @@ document.getElementById("openPopup").addEventListener("click", function () {
     BarkNoise.play();
 
     if (clicks === 3) {
-        document.getElementById("popup").style.display = "block";
+        if (confirm("Ik ben moe, kun je mijn energy blikjes vinden?")) {
+            handleYes();
+        }
         clicks = 0;
     }
 });
 
-document.getElementById("yes").addEventListener("click", function () {
+function handleYes() {
     document.body.classList.toggle("custom-cursor");
-    document.getElementById("popup").style.display = "none";
     DogGif.classList.remove('hidden');
     DogGif.classList.add('animate');
     moveGif();
-});
+}
 
-document.getElementById("no").addEventListener("click", function () {
-    document.getElementById("popup").style.display = "none";
-});
+
+
