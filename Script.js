@@ -3,9 +3,6 @@ let clicks = 0;
 const BarkNoise = document.getElementById("BarkNoise");
 const DogGif = document.getElementById("DogGif.gif");
 
-
-
-
 function moveGif() {
     var frames = document.getElementById("DogGif").children;
     var frameCount = frames.length;
