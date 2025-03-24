@@ -17,7 +17,8 @@ document.getElementById("yes").addEventListener("click", function () {
     document.body.classList.toggle("custom-cursor");
     document.getElementById("popup").style.display = "none";
     DogGif.classList.remove('hidden');
-    DogGif.classList.add('animate-right');
+    //DogGif.classList.add('animate-right');
+    LogoBlank.classList.remove('hidden');
 });
 
 document.getElementById("no").addEventListener("click", function () {
