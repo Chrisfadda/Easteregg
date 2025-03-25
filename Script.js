@@ -3,16 +3,27 @@ let clicks = 0;
 const BarkNoise = document.getElementById("BarkNoise");
 const DogGif = document.getElementById("DogGif.gif");
 
-function moveGif() {
-    var frames = document.getElementById("DogGif").children;
-    var frameCount = frames.length;
-    var i = 0;
-    setInterval(function () {
-        frames[i % frameCount].style.display = "none";
-        frames[++i % frameCount].style.display = "block";
-        document.getElementById("DogGif").style.left = i + "px";
-    }, 300);
+const tracker = document.querySelector(".hondje");
+let mouseX = 0, mouseY = 0;
+let posX = 0, posY = 0;
+const speed = 0.02;
+
+document.addEventListener("mousemove", (e) => {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+});
+
+function animate() {
+    posX += (mouseX - posX) * speed;
+    posY += (mouseY - posY) * speed;
+
+    let mirror = posX > mouseX ? "scaleX(-1)" : "scaleX(1)";
+
+    tracker.style.transform = `translate(${posX}px, ${posY}px) ${mirror}`;
+
+    requestAnimationFrame(animate);
 }
+
 
 document.getElementById("openPopup").addEventListener("click", function () {
     clicks++;
@@ -20,19 +31,17 @@ document.getElementById("openPopup").addEventListener("click", function () {
 
     if (clicks === 3) {
         if (confirm("Ik ben moe, kun je mijn energy blikjes vinden?")) {
-            handleYes();
+            Yes();
         }
         clicks = 0;
     }
 });
 
-function handleYes() {
+function Yes() {
     document.body.classList.toggle("custom-cursor");
-    DogGif.classList.remove('hidden');
-    DogGif.classList.add('animate');
-    moveGif();
+    document.querySelector(".hondje").style.opacity = "100";
+    animate();
 }
-
 
 
 

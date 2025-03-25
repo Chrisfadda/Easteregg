@@ -23,15 +23,6 @@ body {
     z-index: -1;
 }
 
-/* @media screen and (max-width: 2500px) {
-    .openPopup {
-        position: absolute;
-        width: 50px;
-        height: 15px;
-        top: 25px;
-    }
-} */
-
 
 body.custom-cursor {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;border-radius:50%;background:conic-gradient(from 90deg at 4px 4px,%230000 90deg, %232f2b2f 0) -4px -4px/calc(50% + 2px) calc(50% + 2px),repeating-radial-gradient(%230000 0 22%,%232f2b2f 23% 32%);" ></div></foreignObject></svg>') 24 24, auto;
@@ -44,58 +35,22 @@ body.custom-cursor {
     height: 100px;
     top: 0px;
     left: 0;
-    /* opacity: 0; */
-}
-
-
-
-.DogGif {
-    position: absolute;
-    width: 200px;
-    height: 200px;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
 }
-
-
-.DogGif {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
-}
-
-
-.DogGif {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
-}
-
 
 .hidden {
     display: none;
 }
 
-.animate {
-    opacity: 1;
-    display: block;
-    /* Ensure the element is displayed when the animation starts */
-}
 
-
-
-.Dog-Gif {
+.hondje {
+    top: 40px;
+    left: 35px;
+    width: 200px;
+    height: 160px;
     position: absolute;
-    width: 100px;
-    /* Adjust to fit the size of your GIF */
-    height: auto;
-    transition: transform 5s ease-in-out;
+    pointer-events: none;
+    border-radius: 50%;
+    opacity: 0;
 
 }
