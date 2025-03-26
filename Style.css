@@ -1,12 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url(screencapture-fightclub-nl-2025-03-21-10_11_57.png);
-    background-size: auto;
-    height: 98vh;
-    width: 99vw;
+      /* background-image: url(screencapture-fightclub-nl-2025-03-21-10_11_57.png);
+    background-size: auto; */
+    height: auto;
+    width: 98vw;
     align-items: center;
     display: flex;
     position: absolute;
 }
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    height: auto;
+    z-index: -1;
+}
+
 
 body.custom-cursor {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;border-radius:50%;background:conic-gradient(from 90deg at 4px 4px,%230000 90deg, %232f2b2f 0) -4px -4px/calc(50% + 2px) calc(50% + 2px),repeating-radial-gradient(%230000 0 22%,%232f2b2f 23% 32%);" ></div></foreignObject></svg>') 24 24, auto;
@@ -16,8 +32,9 @@ body.custom-cursor {
 .openPopup {
     position: absolute;
     width: 100px;
-    height: 50px;
-    top: 50px;
+    height: 100px;
+    top: 0px;
+    left: 0;
     opacity: 0;
 }
 
@@ -33,6 +50,12 @@ body.custom-cursor {
     padding: 1%
 }
 
+.EnormNoBullshit{
+    position:absolute;
+    top: 150px;
+    left: 150px;
+}
+
 #yes {
     height: 35px;
     width: 60px;
@@ -42,63 +65,125 @@ body.custom-cursor {
     border-radius: 1%;
 }
 
-.DogGif {
-    position: absolute;
+.hondje {
+    top: 40px;
+    left: 35px;
     width: 200px;
-    height: 200px;
+    height: 160px;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
 }
 
-
-.DogGif {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
+#LogoBlank{
+    position:absolute;
+    top: 25px;
+    left: 20px;
 }
 
-
-.DogGif {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
+#EnergyCan1{
+    position:absolute;
+    top: 4600px;
+    right: 740px;
+    opacity: 100%;
 }
 
+#EnergyCan2{
+    position:absolute;
+    top: 1000px;
+    left: 336px;
+    opacity: 100%;
+}
+
+#EnergyCan3{
+    position:absolute;
+    top: 4220px;
+    left: 400px;
+    opacity: 100%;
+}
+
+.VideoPopUp{
+  top: 150px;
+  left: 0px;
+  background-color: rgba(52, 53, 53, 0.21);
+  background-position: 100%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#EnergyCan1:hover {
+    opacity: 100%;
+  }
+
+#EnergyCan2:hover {
+    opacity: 100%;
+  }
+
+#EnergyCan3:hover {
+    opacity: 100%;
+  }
+
+.animate-right {
+    animation: walkR 7s linear;
+}
+
+.animate-left{
+    animation-delay: 7s;
+    animation: walkL 7s linear;
+}
 
 .hidden {
     display: none;
 }
 
-.animate {
-    opacity: 1;
-    display: block;
-    /* Ensure the element is displayed when the animation starts */
+@keyframes walkR{
+    0% { transform: translateX(0) translateY(0); }
+    5% { transform: translateX(5vw) translateY(-20px); }
+    10% { transform: translateX(10vw) translateY(0); }
+    15% { transform: translateX(15vw) translateY(-20px); }
+    20% { transform: translateX(20vw) translateY(0); }
+    25% { transform: translateX(25vw) translateY(-20px); }
+    30% { transform: translateX(30vw) translateY(0); }
+    35% { transform: translateX(35vw) translateY(-20px); }
+    40% { transform: translateX(40vw) translateY(0); }
+    45% { transform: translateX(45vw) translateY(-20px); }
+    50% { transform: translateX(50vw) translateY(0); }
+    55% { transform: translateX(55vw) translateY(-20px); }
+    60% { transform: translateX(60vw) translateY(0); }
+    65% { transform: translateX(65vw) translateY(-20px); }
+    70% { transform: translateX(70vw) translateY(0); }
+    75% { transform: translateX(75vw) translateY(-20px); }
+    80% { transform: translateX(80vw) translateY(0); }
+    85% { transform: translateX(85vw) translateY(-20px); }
+    90% { transform: translateX(90vw) translateY(0); }
+    95% { transform: translateX(95vw) translateY(-20px); }
+    100% { transform: translateX(100vw) translateY(0); }
 }
 
-#yes {
-    height: 35px;
-    width: 60px;
-    margin-right: 20px;
-    background-color: rgb(0, 224, 0);
-    border: none;
-    border-radius: 1%;
-}
-
-
-#no {
-    height: 35px;
-    width: 60px;
-    margin-left: 20px;
-    background-color: red;
-    border: none;
-    border-radius: 1%;
+@keyframes walkL {
+    0% { transform: translateX(100vw) translateY(0); }
+    5% { transform: translateX(95vw) translateY(-20px); }
+    10% { transform: translateX(90vw) translateY(0); }
+    15% { transform: translateX(85vw) translateY(-20px); }
+    20% { transform: translateX(80vw) translateY(0); }
+    25% { transform: translateX(75vw) translateY(-20px); }
+    30% { transform: translateX(70vw) translateY(0); }
+    35% { transform: translateX(65vw) translateY(-20px); }
+    40% { transform: translateX(60vw) translateY(0); }
+    45% { transform: translateX(55vw) translateY(-20px); }
+    50% { transform: translateX(50vw) translateY(0); }
+    55% { transform: translateX(45vw) translateY(-20px); }
+    60% { transform: translateX(40vw) translateY(0); }
+    65% { transform: translateX(35vw) translateY(-20px); }
+    70% { transform: translateX(30vw) translateY(0); }
+    75% { transform: translateX(25vw) translateY(-20px); }
+    80% { transform: translateX(20vw) translateY(0); }
+    85% { transform: translateX(15vw) translateY(-20px); }
+    90% { transform: translateX(10vw) translateY(0); }
+    95% { transform: translateX(5vw) translateY(-20px); }
+    100% { transform: translateX(0) translateY(0); }
 }
 
 #yes:hover {
@@ -107,12 +192,4 @@ body.custom-cursor {
 
 #no:hover {
     cursor: pointer;
-}
-
-.Dog-Gif {
-    position: absolute;
-    width: 100px;
-    /* Adjust to fit the size of your GIF */
-    height: auto;
-    transition: transform 5s ease-in-out;
 }
