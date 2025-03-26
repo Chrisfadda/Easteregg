@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
-      /* background-image: url(screencapture-fightclub-nl-2025-03-21-10_11_57.png);
-    background-size: auto; */
-    height: auto;
-    width: 98vw;
-    align-items: center;
+.body {
+    margin: 0;
+    height: 100vh;
     display: flex;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Optional */
 }
 
 #background {
@@ -51,9 +50,9 @@ body.custom-cursor {
 }
 
 .EnormNoBullshit{
-    position:absolute;
-    top: 150px;
-    left: 150px;
+    max-width: 80%; /* Adjust to fit screen */
+    max-height: 80vh;
+    border: 2px solid white; /* Optional styling */
 }
 
 #yes {
@@ -84,33 +83,32 @@ body.custom-cursor {
 
 #EnergyCan1{
     position:absolute;
-    top: 4600px;
-    right: 740px;
-    opacity: 100%;
+    top: 2210px;
+    right: 520px;
+    opacity: 0%;
 }
 
 #EnergyCan2{
     position:absolute;
-    top: 1000px;
-    left: 336px;
-    opacity: 100%;
+    top: 20px;
+    left: 20px;
+    opacity: 0%;
 }
 
 #EnergyCan3{
     position:absolute;
     top: 4220px;
     left: 400px;
-    opacity: 100%;
+    opacity: 0%;
 }
 
 .VideoPopUp{
-  top: 150px;
-  left: 0px;
-  background-color: rgba(52, 53, 53, 0.21);
-  background-position: 100%;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+    position: fixed;
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
 }
 
 #EnergyCan1:hover {

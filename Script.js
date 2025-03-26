@@ -54,8 +54,13 @@ function Completed(){
     if (cans === 3) {
         EnormNoBullshit.classList.remove('hidden');
         EnormNoBullshit.play();
+        VideoRemove();
     }
 }
+EnormNoBullshit.addEventListener("ended", function () {
+    EnormNoBullshit.remove(); 
+    console.log("Video removed after playing.");
+  });
 
 document.getElementById("EnergyCan1").addEventListener("click", function () {
     this.remove();
