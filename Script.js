@@ -1,20 +1,30 @@
 let clicks = 0;
+let cans = 0;
 
 const BarkNoise = document.getElementById("BarkNoise");
-const DogGif = document.getElementById("DogGif.gif");
+const DogGif = document.getElementById("DogGif");
+const CanSound = document.getElementById("CanSound");
+const EnormNoBullshit = document.getElementById("EnormNoBullshit");
 
+const tracker = document.querySelector(".hondje");
+let mouseX = 0, mouseY = 0;
+let posX = 0, posY = 0;
+const speed = 0.02;
 
+document.addEventListener("mousemove", (e) => {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+});
 
+function animate() {
+    posX += (mouseX - posX) * speed;
+    posY += (mouseY - posY) * speed;
 
-function moveGif() {
-    var frames = document.getElementById("DogGif").children;
-    var frameCount = frames.length;
-    var i = 0;
-    setInterval(function () {
-        frames[i % frameCount].style.display = "none";
-        frames[++i % frameCount].style.display = "block";
-        document.getElementById("DogGif").style.left = i + "px";
-    }, 300);
+    let mirror = posX > mouseX ? "scaleX(-1)" : "scaleX(1)";
+
+    tracker.style.transform = `translate(${posX}px, ${posY}px) ${mirror}`;
+
+    requestAnimationFrame(animate);
 }
 
 document.getElementById("openPopup").addEventListener("click", function () {
@@ -22,19 +32,62 @@ document.getElementById("openPopup").addEventListener("click", function () {
     BarkNoise.play();
 
     if (clicks === 3) {
-        document.getElementById("popup").style.display = "block";
+        if (confirm("Ik ben moe, kun je mijn energy blikjes vinden?")) {
+            Yes();
+        }
         clicks = 0;
     }
 });
 
-document.getElementById("yes").addEventListener("click", function () {
+function Yes() {
     document.body.classList.toggle("custom-cursor");
-    document.getElementById("popup").style.display = "none";
-    DogGif.classList.remove('hidden');
-    DogGif.classList.add('animate');
-    moveGif();
+    document.querySelector(".hondje").style.opacity = "100";
+    animate();
+    //DogGif.classList.add('animate-right');
+    LogoBlank.classList.remove('hidden');
+    EnergyCanCreative.classList.remove('hidden');
+    EnergyCanLogo.classList.remove('hidden');
+    EnergyCanSocial.classList.remove('hidden');
+}
+
+function Completed() {
+    EnormNoBullshit.classList.remove('hidden');
+    EnormNoBullshit.play();
+    EnormNoBullshit.addEventListener("ended", function () {
+        EnormNoBullshit.remove();
+        console.log("Video removed after playing.");
+    })
+};
+
+document.getElementById("EnergyCanCreative").addEventListener("click", function () {
+    this.remove();
+    cans++;
+    CanSound.play();
+    if (cans < 3) {
+        alert("We don't talk about it");
+    } else {
+        Completed();
+    }
 });
 
-document.getElementById("no").addEventListener("click", function () {
-    document.getElementById("popup").style.display = "none";
+document.getElementById("EnergyCanLogo").addEventListener("click", function () {
+    this.remove();
+    cans++;
+    CanSound.play();
+    if (cans < 3) {
+        alert("Focus op het sociale aspect");
+    } else {
+        Completed();
+    }
+});
+
+document.getElementById("EnergyCanSocial").addEventListener("click", function () {
+    this.remove();
+    cans++;
+    CanSound.play();
+    if (cans < 3) {
+        alert("Wees creatief");
+    } else {
+        Completed();
+    }
 });

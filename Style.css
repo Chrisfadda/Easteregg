@@ -1,118 +1,296 @@
-body {
-    background-image: url(screencapture-fightclub-nl-2025-03-21-10_11_57.png);
-    background-size: auto;
-    height: 98vh;
-    width: 99vw;
-    align-items: center;
-    display: flex;
-    position: absolute;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+.body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    /* Optional */
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    height: auto;
+    z-index: -1;
+}
+
+
 body.custom-cursor {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;border-radius:50%;background:conic-gradient(from 90deg at 4px 4px,%230000 90deg, %232f2b2f 0) -4px -4px/calc(50% + 2px) calc(50% + 2px),repeating-radial-gradient(%230000 0 22%,%232f2b2f 23% 32%);" ></div></foreignObject></svg>') 24 24, auto;
+    cursor: url('Bone.cur')40 40, default;
 }
 
 
 .openPopup {
     position: absolute;
     width: 100px;
-    height: 50px;
-    top: 50px;
-    opacity: 0;
-}
-
-.popup {
-    display: none;
-    border-radius: 2%;
-    background-color: rgb(215, 205, 205);
-    width: 250px;
     height: 100px;
-    margin-left: 43%;
-    text-align: center;
-    font-size: x-large;
-    padding: 1%
-}
-
-#yes {
-    height: 35px;
-    width: 60px;
-    margin-right: 20px;
-    background-color: rgb(0, 224, 0);
-    border: none;
-    border-radius: 1%;
-}
-
-.DogGif {
-    position: absolute;
-    width: 200px;
-    height: 200px;
+    top: 0px;
+    left: 0;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
+}
+
+.openPopup:hover {
+    cursor: pointer;
+}
+
+.EnormNoBullshit {
+    max-width: 80%;
+    /* Adjust to fit screen */
+    max-height: 80vh;
+    border: 2px solid white;
+    /* Optional styling */
 }
 
 
-.DogGif {
-    position: absolute;
+.hondje {
+    top: 40px;
+    left: 35px;
     width: 200px;
-    height: 200px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
-}
-
-
-.DogGif {
+    height: 160px;
     position: absolute;
-    width: 200px;
-    height: 200px;
+    pointer-events: none;
+    border-radius: 50%;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Animation transition for opacity */
 }
 
+#LogoBlank {
+    position: absolute;
+    top: 45px;
+    left: 37px;
+}
+
+#EnergyCanCreative {
+    position: absolute;
+    top: 3855px;
+    right: 1015px;
+    opacity: 0%;
+}
+
+#EnergyCanLogo {
+    position: absolute;
+    top: 41px;
+    left: 125px;
+    opacity: 0%;
+}
+
+#EnergyCanSocial {
+    position: absolute;
+    top: 5180px;
+    left: 620px;
+    opacity: 0%;
+}
+
+.VideoPopUp {
+    position: fixed;
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 300px;
+}
+
+#EnergyCanCreative:hover {
+    opacity: 100%;
+}
+
+#EnergyCanLogo:hover {
+    opacity: 100%;
+}
+
+#EnergyCanSocial:hover {
+    opacity: 100%;
+}
+
+/* .animate-right {
+    animation: walkR 7s linear;
+}
+
+.animate-left {
+    animation-delay: 7s;
+    animation: walkL 7s linear;
+} */
 
 .hidden {
     display: none;
 }
 
-.animate {
-    opacity: 1;
-    display: block;
-    /* Ensure the element is displayed when the animation starts */
+/* @keyframes walkR {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    5% {
+        transform: translateX(5vw) translateY(-20px);
+    }
+
+    10% {
+        transform: translateX(10vw) translateY(0);
+    }
+
+    15% {
+        transform: translateX(15vw) translateY(-20px);
+    }
+
+    20% {
+        transform: translateX(20vw) translateY(0);
+    }
+
+    25% {
+        transform: translateX(25vw) translateY(-20px);
+    }
+
+    30% {
+        transform: translateX(30vw) translateY(0);
+    }
+
+    35% {
+        transform: translateX(35vw) translateY(-20px);
+    }
+
+    40% {
+        transform: translateX(40vw) translateY(0);
+    }
+
+    45% {
+        transform: translateX(45vw) translateY(-20px);
+    }
+
+    50% {
+        transform: translateX(50vw) translateY(0);
+    }
+
+    55% {
+        transform: translateX(55vw) translateY(-20px);
+    }
+
+    60% {
+        transform: translateX(60vw) translateY(0);
+    }
+
+    65% {
+        transform: translateX(65vw) translateY(-20px);
+    }
+
+    70% {
+        transform: translateX(70vw) translateY(0);
+    }
+
+    75% {
+        transform: translateX(75vw) translateY(-20px);
+    }
+
+    80% {
+        transform: translateX(80vw) translateY(0);
+    }
+
+    85% {
+        transform: translateX(85vw) translateY(-20px);
+    }
+
+    90% {
+        transform: translateX(90vw) translateY(0);
+    }
+
+    95% {
+        transform: translateX(95vw) translateY(-20px);
+    }
+
+    100% {
+        transform: translateX(100vw) translateY(0);
+    }
 }
 
-#yes {
-    height: 35px;
-    width: 60px;
-    margin-right: 20px;
-    background-color: rgb(0, 224, 0);
-    border: none;
-    border-radius: 1%;
-}
+@keyframes walkL {
+    0% {
+        transform: translateX(100vw) translateY(0);
+    }
 
+    5% {
+        transform: translateX(95vw) translateY(-20px);
+    }
 
-#no {
-    height: 35px;
-    width: 60px;
-    margin-left: 20px;
-    background-color: red;
-    border: none;
-    border-radius: 1%;
-}
+    10% {
+        transform: translateX(90vw) translateY(0);
+    }
 
-#yes:hover {
-    cursor: pointer;
-}
+    15% {
+        transform: translateX(85vw) translateY(-20px);
+    }
 
-#no:hover {
-    cursor: pointer;
-}
+    20% {
+        transform: translateX(80vw) translateY(0);
+    }
 
-.Dog-Gif {
-    position: absolute;
-    width: 100px;
-    /* Adjust to fit the size of your GIF */
-    height: auto;
-    transition: transform 5s ease-in-out;
-}
+    25% {
+        transform: translateX(75vw) translateY(-20px);
+    }
+
+    30% {
+        transform: translateX(70vw) translateY(0);
+    }
+
+    35% {
+        transform: translateX(65vw) translateY(-20px);
+    }
+
+    40% {
+        transform: translateX(60vw) translateY(0);
+    }
+
+    45% {
+        transform: translateX(55vw) translateY(-20px);
+    }
+
+    50% {
+        transform: translateX(50vw) translateY(0);
+    }
+
+    55% {
+        transform: translateX(45vw) translateY(-20px);
+    }
+
+    60% {
+        transform: translateX(40vw) translateY(0);
+    }
+
+    65% {
+        transform: translateX(35vw) translateY(-20px);
+    }
+
+    70% {
+        transform: translateX(30vw) translateY(0);
+    }
+
+    75% {
+        transform: translateX(25vw) translateY(-20px);
+    }
+
+    80% {
+        transform: translateX(20vw) translateY(0);
+    }
+
+    85% {
+        transform: translateX(15vw) translateY(-20px);
+    }
+
+    90% {
+        transform: translateX(10vw) translateY(0);
+    }
+
+    95% {
+        transform: translateX(5vw) translateY(-20px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+} */
