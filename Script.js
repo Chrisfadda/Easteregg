@@ -2,7 +2,6 @@ let clicks = 0;
 let cans = 0;
 
 const BarkNoise = document.getElementById("BarkNoise");
-const DogGif = document.getElementById("DogGif");
 const CanSound = document.getElementById("CanSound");
 const EnormNoBullshit = document.getElementById("EnormNoBullshit");
 
