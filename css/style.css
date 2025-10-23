@@ -64,29 +64,29 @@ body.custom-cursor {
 
 #LogoBlank {
     position: absolute;
-    top: 45px;
-    left: 37px;
+    top: 25px;
+    left: 20px;
 }
 
 #EnergyCanCreative {
     position: absolute;
-    top: 3855px;
-    right: 1015px;
-    opacity: 0%;
+    top: 2300px;
+    right: 570px;
+    opacity: 0%; 
 }
 
 #EnergyCanLogo {
     position: absolute;
-    top: 41px;
-    left: 125px;
+    top: 20px;
+    left: 65px;
     opacity: 0%;
 }
 
 #EnergyCanSocial {
     position: absolute;
-    top: 5180px;
-    left: 620px;
-    opacity: 0%;
+    top: 2980px;
+    left: 390px;
+     opacity: 0%; 
 }
 
 .VideoPopUp {
